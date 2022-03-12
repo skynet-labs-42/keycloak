@@ -10,6 +10,7 @@
 
         <script>
             <#if properties.developmentMode?has_content && properties.developmentMode == "true">
+            var keycloak = Keycloak();
             var developmentMode = true;
             var reactRuntime = 'react.development.js';
             var reactDOMRuntime = 'react-dom.development.js';

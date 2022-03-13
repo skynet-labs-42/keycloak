@@ -1298,6 +1298,7 @@ function Keycloak (config) {
         if (loginIframe.enable || kc.silentCheckSsoRedirectUri) {
             var iframe = document.createElement('iframe');
             iframe.setAttribute('src', kc.endpoints.thirdPartyCookiesIframe());
+            iframe.setAttribute('src', kc.endpoints.thirdPartyCookiesIframe());
             iframe.setAttribute('title', 'keycloak-3p-check-iframe' );
             iframe.style.display = 'none';
             document.body.appendChild(iframe);
